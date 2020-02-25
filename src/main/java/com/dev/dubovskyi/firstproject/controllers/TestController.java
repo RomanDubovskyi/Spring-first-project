@@ -1,12 +1,12 @@
 package com.dev.dubovskyi.firstproject.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class TestController {
-@RequestMapping("/")
-public String home() {
-return "Spring boot is working!";
-}
+    @RequestMapping("/")
+    public String getHomepage() {
+        return "index";
+    }
 }
